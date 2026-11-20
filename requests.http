@@ -34,4 +34,4 @@ Content-Type: application/json
 GET http://localhost:8080/movies
 
 ### Get one movie
-GET http://localhost:8080/movies/[uuid]
+GET http://localhost:8080/movies/89141602-427f-4d49-b3de-cc91a08492b0
