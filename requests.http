@@ -1,0 +1,37 @@
+### Post Harry potter
+POST http://localhost:8080/movies
+Content-Type: application/json
+
+{
+  "title": "Harry Potter y la piedra filosofal",
+  "releaseYear": 2001,
+  "status": "active"
+}
+
+### Post Andrea
+
+POST http://localhost:8080/movies
+Content-Type: application/json
+
+{
+  "title": "Andrea",
+  "releaseYear": 2005,
+  "status": "active"
+}
+
+### Post prueba
+
+POST http://localhost:8080/movies
+Content-Type: application/json
+
+{
+  "title": "prueba",
+  "status": "active"
+}
+
+
+### Get all the movies
+GET http://localhost:8080/movies
+
+### Get one movie
+GET http://localhost:8080/movies/[uuid]
