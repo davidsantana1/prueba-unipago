@@ -12,5 +12,21 @@ class MovieService(private val db: MovieRepository) {
 
     fun findMovieById(id: String): Movie? = db.findByIdOrNull(id)
 
+    fun updateMovieById(id: String, movie: Movie): Movie? {
+            return if (db.existsById(id)) {
+                db.save(movie.copy(id = id))
+            } else {
+                null
+            }
+          }
+    fun deleteMovieById(id: String): Movie? {
+            val movie = findMovieById(id)
+            return if (movie != null) {
+                db.save(movie.copy(status = "deleted"))
+            } else {
+                null
+            }
+          }
+
     fun save(movie: Movie): Movie = db.save(movie)
 }

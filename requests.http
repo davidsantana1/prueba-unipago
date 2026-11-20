@@ -29,6 +29,18 @@ Content-Type: application/json
   "status": "active"
 }
 
+### Update prueba
+
+PUT http://localhost:8080/movies/89141602-427f-4d49-b3de-cc91a08492b0
+Content-Type: application/json
+
+{
+  "title": "Andrea editado sin fecha",
+  "status": "active"
+}
+
+### Delete Andrea
+DELETE http://localhost:8080/movies/89141602-427f-4d49-b3de-cc91a08492b0
 
 ### Get all the movies
 GET http://localhost:8080/movies
